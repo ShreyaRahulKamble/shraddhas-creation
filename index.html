@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shraddha's Creation | Handmade Jewellery</title>
+<meta name="description" content="Discover beautiful handmade jewellery, thoughtfully designed to add elegance and charm to every occasion.">
+<meta name="theme-color" content="#16130f">
+<link rel="icon" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><img src="assets/images/logo.jpg" alt=""><i></i></div>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <img class="logo" src="assets/images/logo.jpg" alt="Shraddha's Creation logo" width="190" height="190">
+  <h1 data-cfg="businessName">Shraddha's Creation</h1>
+  <p class="tag" data-cfg="tagline"></p>
+  <p class="lead" data-cfg="description"></p>
+  <a class="btn btn-gold big" href="#collection">Explore Collection</a>
+  <a class="btn btn-ghost big" id="heroWa" target="_blank" rel="noopener" hidden>Chat on WhatsApp</a>
+  <a class="scroll" href="#about" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+<section class="sec about reveal" id="about">
+  <div class="orn" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M6 4h12l4 6-10 11L2 10z M2 10h20 M9 4l-2 6 5 11 5-11-2-6"/></svg><i></i></div>
+  <p class="label">Handcrafted with Love</p>
+  <h2 data-cfg="category"></h2>
+  <p class="copy" data-cfg="description"></p>
+  <ul class="chips"><li>Earrings</li><li>Necklaces</li><li>Traditional</li><li>Designer</li><li>Custom</li></ul>
+</section>
+
+<section class="sec" id="collection">
+  <h2 class="reveal">Signature Collection</h2>
+  <p class="sub reveal">Tap any photo to view it larger.</p>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="sec" id="connect">
+  <h2 class="reveal">Connect with us</h2>
+  <div class="actions reveal" id="actions"></div>
+  <div class="social reveal" id="social"></div>
+</section>
+
+<section class="sec qr reveal" id="qr">
+  <h2>Scan to Explore</h2>
+  <div class="qr-wrap"><canvas id="qrCanvas" width="300" height="300" aria-label="QR code for this card"></canvas></div>
+  <p class="qr-url" id="qrUrl"></p>
+  <div class="qr-btns"><button class="btn btn-gold" id="qrDl" type="button">Download QR Code</button><button class="btn btn-ghost" id="qrShare" type="button">Share Digital Card</button></div>
+</section>
+
+<section class="sec info reveal" id="info">
+  <h2>Find us</h2>
+  <ul id="infoList"></ul>
+  <a class="btn btn-gold" id="dirBtn" target="_blank" rel="noopener" hidden>Get Directions</a>
+</section>
+</main>
+
+<footer><img src="assets/images/logo.jpg" alt="" width="56" height="56"><p><span data-cfg="businessName"></span>. Handcrafted with love.</p></footer>
+<a id="chatFab" class="fab" target="_blank" rel="noopener" hidden aria-label="Chat on WhatsApp"><svg class="ico" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.800 7L4 20l1.100-4A8 8 0 1 1 20 12z"/><path d="M9 9c0 3 3 6 6 6l1-1.500-2-1-1 .8c-1-.4-2-1.400-2.300-2.300l.8-1-1-2z"/></svg><span>Chat on WhatsApp</span></a>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo gallery"><button id="lbClose" aria-label="Close">&times;</button><button id="lbPrev" aria-label="Previous">&#8249;</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure><button id="lbNext" aria-label="Next">&#8250;</button></div>
+<div id="sheet" hidden role="dialog" aria-modal="true" aria-label="Share"><div class="sheet-box"><h3>Share this card</h3><div id="sheetLinks"></div><button class="btn btn-ghost" id="sheetClose" type="button">Close</button></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/vendor/qrcode.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/qr.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
